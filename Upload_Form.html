@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Form</title>
+    <style>
+        body {
+            margin-left: 50px;
+            margin-top: -19px;
+        }
+
+        .container {
+            background-color: grey;
+            height: 70vh;
+            width: 1000px;
+            background: -webkit-linear-gradient(left, #a445b2, #3de8ff);
+
+
+        }
+
+        h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .image-preview {
+            width: 300px;
+            min-height: 100px;
+            border: 2px solid #dddddd;
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: #cccccc;
+        }
+
+        .image-preview-img {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 10rem
+        }
+
+        .btn {
+            display: flex;
+            margin-top: 1px;
+
+        }
+
+        button {
+            background-color: red;
+            border: none;
+            cursor: pointer;
+            padding: 5px 5px;
+            margin-top: 15px;
+            text-align: center;
+            text-decoration: none;
+            /* display:flex; */
+            font-size: 15px;
+            border-radius: 2px;
+        }
+
+        button:hover {
+            background: blue;
+            color: yellow;
+        }
+
+        .fullbox {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+        }
+        .textbox{
+            justify-content: center;
+            align-items: center;
+        }
+
+    input[type=text]{
+        float: right;
+        padding: 0;
+        height: 30px;
+        position: relative;
+        left: 0;
+        outline: none;
+        border: 1px solid #3de8ff;
+        font-size: 16px;
+        margin-right: 10%;
+        padding-bottom: auto;
+    }
+        
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <h1>Upload Image</h1>
+        <!-- <hr width="100%"> -->
+        <div class="fullbox">
+
+            <input class="File-choose" type="file" name="" id="inpFile">
+            <div class="image-preview" id="imagePreview">
+                <img src="dilboy.png" alt="Image Preview" class="image-preview-img">
+                <span class="image-preview_default-text">Image Preview</span>
+            </div>
+            <div class="btn">
+                <button>Upload</button>
+            </div>
+        </div>
+        
+        <div class="textbox">
+
+            <input type="text">
+        </div>
+    
+
+
+    </div>
+</body>
+
+</html>
